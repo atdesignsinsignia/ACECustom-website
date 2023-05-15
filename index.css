@@ -7,6 +7,7 @@
 
 :root {
     --red: rgb(239, 2, 2);
+    --yellow: rgb(255, 187, 0);
     --black: #333;
 }
 
@@ -20,6 +21,23 @@ a {
     padding: 0.5rem 2.5rem;
     border-radius: 0.3rem;
 }
+
+body {
+    position: relative;  /* Ensures the pseudo-element positions relative to the body */
+}
+
+body::before {
+    content: "";
+    background: url(./images/background.webp);  /* your background image */
+    position: absolute;  /* Positions the pseudo-element right over the body */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;  /* Set the opacity of the background image */
+    z-index: -1;  /* Puts the pseudo-element behind the body content */
+}
+
 
 /* HEADER */
 
@@ -62,8 +80,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: solid 0.5rem rgb(255, 187, 0);
+    border-bottom: solid 0.5rem var(--yellow);
     padding-block: 1.5rem;
+    background-color: white;
 }
 
 nav {
@@ -82,6 +101,145 @@ nav a {
 
 /* MAIN SECTION */
 
-.products-box-container {
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    border: solid 1px greenyellow;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 1rem;
+    width: 100%;
+
+
+}
+
+.grid-1fr {
+    border: 1px solid pink;
+}
+
+.grid-2fr{
+    grid-column: span 3;
+    border: 1px solid yellow;
+}
+
+.products-box {
+
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.products-img-overlay {
+        position: relative;
+        display: inline-block;
+    }
+    
+.products-img-overlay:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--red);
+        opacity: .1;
+        transition: opacity .3s ease;
+        border-radius: 1rem;
+    }
+    
+.products-img-overlay:hover:before {
+        opacity: 0;
+    }
+    
+.products-img{
+        max-width: 20rem;
+        border-radius: 1rem;
+        display: block;
+    }
+    
+
+
+
+
+.products-specials-box ul {
+    list-style-type: none;
+}
+
+
+.specials-img {
+    width: 100%;
+}
+
+
+.products-specials-testimonials {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-icons-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*BRANDS*/
+
+.brands-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brands-container img {
+    width: 80%;
+}
+
+/* NEXT PROJECT */
+
+.next-project-container {
+    display: flex;
+ 
+}
+
+.next-project-img {
+    max-width: 55rem;
+    border-radius: 0.5rem;
+}
+
+.next-project-ace-logo {
+    width: 20rem;
+}
+
+.next-project-right-container {
+    border: solid 1px green;
+    width: 100%;
+}
+
+
+/*FOOTER SECTION*/
+
+.top-footer, .footer-phone, .footer-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-footer img {
+    max-width: 2.5rem;
+}
+
+.top-footer {
+    background-color: white;
+}
+
+.bottom-footer {
+    color: var(--yellow);
+    background-color: var(--red);
+    text-align: center;
 }
