@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: var(--black);
 }
 
 :root {
@@ -29,13 +30,20 @@ body {
 body::before {
     content: "";
     background: url(./images/background.webp);  /* your background image */
+    background-attachment: fixed;
     position: absolute;  /* Positions the pseudo-element right over the body */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.2;  /* Set the opacity of the background image */
+    opacity: 0.15;  /* Set the opacity of the background image */
     z-index: -1;  /* Puts the pseudo-element behind the body content */
+    background-color: rgba(99, 99, 99, 0.288); /* Adjust the opacity and color values as desired */
+}
+
+.drop-shadow {
+    -webkit-box-shadow: 2px 4px 11px -7px rgba(0,0,0,0.9); 
+    box-shadow: 2px 4px 11px -7px rgba(0,0,0,0.9);
 }
 
 
@@ -45,10 +53,14 @@ body::before {
     display: flex;
     justify-content: space-between;
     background-color: var(--red);
-    color: white;
+    
     border-bottom: 1px solid var(--black);
     padding-block: 0.2rem;
     padding-inline: 1.5rem;
+}
+
+.header-top-red-bar p {
+    color: white;
 }
 
 .header-top-left-container {
@@ -104,7 +116,7 @@ nav a {
 main {
     max-width: 1400px;
     margin: 0 auto;
-    border: solid 1px greenyellow;
+    
 }
 
 .grid-container {
@@ -117,14 +129,20 @@ main {
 
 }
 
-.grid-1fr {
-    border: 1px solid pink;
+.grid-1fr, .grid-2fr {
+    -webkit-box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.71); 
+    box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.71);
+    background-color: white;
+    border-radius: 0.5rem;
 }
 
 .grid-2fr{
     grid-column: span 3;
-    border: 1px solid yellow;
+
+    border-radius: 0.5rem;
 }
+
+/*PRODUCTS */
 
 .products-box {
 
@@ -132,6 +150,11 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center; 
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    background-color: white;
+    
+
 }
 
 .products-img-overlay {
@@ -149,7 +172,7 @@ main {
         background: var(--red);
         opacity: .1;
         transition: opacity .3s ease;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
     }
     
 .products-img-overlay:hover:before {
@@ -158,12 +181,26 @@ main {
     
 .products-img{
         max-width: 20rem;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         display: block;
     }
+
+.products-text {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    
+}
+
+
+
+/*SPECIALS*/
     
 
+.products-specials-box {
+    text-align: center;
 
+}
 
 
 .products-specials-box ul {
@@ -173,18 +210,31 @@ main {
 
 .specials-img {
     width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 
-.products-specials-testimonials {
-    display: flex;
-    flex-direction: column;
-}
+/*TESTIMONIALS*/
+
 
 .testimonial-icons-container {
     display: flex;
     justify-content: center;
     text-align: center;
+ 
+    
+    
+}
+
+.testimonials-p {
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.testimonials-master-container img {
+    width: 7rem;
 }
 
 
@@ -194,10 +244,21 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-block: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.71); 
+    box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.71);
+    padding: 2rem;
 }
 
 .brands-container img {
     width: 80%;
+}
+
+.contact-us-container {
+    text-align: center;
+    margin-block: 3rem;
 }
 
 /* NEXT PROJECT */
@@ -219,6 +280,7 @@ main {
 .next-project-right-container {
     border: solid 1px green;
     width: 100%;
+    padding: 2rem;
 }
 
 
