@@ -23,8 +23,13 @@ a {
     border-radius: 0.3rem;
 }
 
+.btn-yellow-border {
+    border: var(--yellow) solid 3px;
+}
+
 body {
     position: relative;  /* Ensures the pseudo-element positions relative to the body */
+
 }
 
 body::before {
@@ -36,14 +41,19 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.15;  /* Set the opacity of the background image */
+    opacity: 0.2;  /* Set the opacity of the background image */
     z-index: -1;  /* Puts the pseudo-element behind the body content */
-    background-color: rgba(99, 99, 99, 0.288); /* Adjust the opacity and color values as desired */
+    background-color: rgba(77, 77, 77, 0.568); /* Adjust the opacity and color values as desired */
 }
 
 .drop-shadow {
     -webkit-box-shadow: 2px 4px 11px -7px rgba(0,0,0,0.9); 
     box-shadow: 2px 4px 11px -7px rgba(0,0,0,0.9);
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.3;
 }
 
 
@@ -116,6 +126,7 @@ nav a {
 main {
     max-width: 1400px;
     margin: 0 auto;
+    margin-block: 8rem;
     
 }
 
@@ -123,7 +134,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: auto;
-    gap: 1rem;
+    gap: 2rem;
     width: 100%;
 
 
@@ -140,6 +151,10 @@ main {
     grid-column: span 3;
 
     border-radius: 0.5rem;
+}
+
+.section-header {
+    margin-block: 1rem;
 }
 
 /*PRODUCTS */
@@ -180,10 +195,16 @@ main {
     }
     
 .products-img{
-        max-width: 20rem;
+        max-width: 17rem;
         border-radius: 0.5rem;
         display: block;
     }
+
+
+.product-header {
+    font-weight: 500;
+    margin-top: 1rem;
+}
 
 .products-text {
     text-align: center;
@@ -195,6 +216,13 @@ main {
 
 
 /*SPECIALS*/
+
+.products-specials-text-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3333330c;
+}
     
 
 .products-specials-box {
@@ -202,15 +230,38 @@ main {
 
 }
 
+.products-specials-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-block: 2rem;
+    background-color: #3333331f;
+    padding: 2rem;
+    border-radius: 1rem 0 1rem 0;
+    text-align: left;
+    height: 5rem;
 
-.products-specials-box ul {
-    list-style-type: none;
 }
 
+.products-specials-list-container p {
+    margin-block: 0.3rem;
+    font-weight: 500;
+}
 
 .specials-img {
-    width: 100%;
-    border-radius: 0.5rem 0.5rem 0 0;
+    width: 90%;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.products-specials-text {
+    margin-block: 1rem;
+    text-align: left;
+}
+
+.products-specials-text h2 {
+    font-size: 4rem;
+    font-weight: 500;
 }
 
 
@@ -230,7 +281,7 @@ main {
     font-weight: 400;
     font-size: 1.7rem;
     text-align: center;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
 }
 
 .testimonials-master-container img {
@@ -239,6 +290,10 @@ main {
 
 
 /*BRANDS*/
+
+.brands-section-container {
+    margin-bottom: 5rem;
+}
 
 .brands-container {
     display: flex;
@@ -253,7 +308,19 @@ main {
 }
 
 .brands-container img {
-    width: 80%;
+    width: 60%;
+
+}
+
+.brands-header-p {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.brands-subheader-p {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2rem;
 }
 
 .contact-us-container {
@@ -275,12 +342,24 @@ main {
 
 .next-project-ace-logo {
     width: 20rem;
+    margin-bottom: 2.5rem;
 }
 
 .next-project-right-container {
-    border: solid 1px green;
+
     width: 100%;
     padding: 2rem;
+}
+
+.next-project-left-text-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-project-left-text-container p {
+    width: 35rem;
+    line-height: 1.5;
+    margin-block: 1rem;
 }
 
 
@@ -290,18 +369,28 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-inline: 1rem;
 }
 
 .top-footer img {
     max-width: 2.5rem;
+
 }
 
 .top-footer {
     background-color: white;
+    padding: 1rem;
+    
 }
 
 .bottom-footer {
-    color: var(--yellow);
+    
     background-color: var(--red);
     text-align: center;
+    padding: 1rem;
+}
+
+.bottom-footer p {
+    color: var(--yellow);
+    font-weight: 400;
 }

@@ -36,14 +36,15 @@
                 <nav>
                     <a href="#">Products</a>
                     <a href="#">Projects</a>
-                    <a href="#" class="nav-button btn">QUOTE</a>
+                    <a href="#" class="nav-button btn  drop-shadow" style="border-radius: 0.5rem;">QUOTE</a>
                     
                 </nav>
             </div>
         </header>
         <main>
+            <h1 class="section-header">Products</h1>
             <section>
-                <h2>Products</h2>
+                
                 <div class="grid-container">
 
 
@@ -51,7 +52,7 @@
                         <div class="products-img-overlay">
                             <img src="./images/Gallery_Buckles.webp" class="products-img" alt="custom buckles">
                         </div>
-                        <h2>CUSTOM BUCKLES</h2>
+                        <h2 class="product-header">Custom Buckles</h2>
                         <div class="products-text">
                             <p>Your design, colors, shape & logo.</p>
                             <p>Thousands, or just a few.</p>
@@ -61,7 +62,7 @@
                         <div class="products-img-overlay">
                             <img src="./images/Gallery_Medals.webp" class="products-img" alt="custom medals">
                         </div>
-                        <h2>CUSTOM MEDALS</h2>
+                        <h2 class="product-header">Custom Medals</h2>
                         <div class="products-text">
                             <p>Mud Runs and Marathons.</p>
                             <p>Tournaments and Varsity events.</p>
@@ -71,7 +72,7 @@
                         <div class="products-img-overlay">
                             <img src="./images/Gallery_Coins.webp" class="products-img" alt="custom coins">
                         </div>
-                        <h2>CUSTOM COINS</h2>
+                        <h2 class="product-header">Custom Coins</h2>
                         <div class="products-text">
                             <p>Detailed challenge coins, fundraiser coins, unique shaped coins</p>
                         </div>
@@ -81,7 +82,7 @@
                         <div class="products-img-overlay">
                             <img src="./images/Gallery_Pins.webp" class="products-img" alt="custom pins">
                         </div>
-                        <h2>CUSTOM PINS</h2>
+                        <h2 class="product-header">Custom Pins</h2>
                         <div class="products-text">
                             <p>Domestic or overseas manufacturing.</p>
                             <p>Low minimums.</p>
@@ -89,12 +90,18 @@
                     </div>
                     <div class="grid-2fr products-specials-box">
                         <img src="./images/specials copy.webp" class="specials-img" alt="special products">
-                        <h2>SPECIALS</h2>
-                        <p>Check out our new products!</p>
-                        <ul>
-                            <li>Ladies Custom Belts</li>
-                            <li>Championship Belt Style Bracelet</li>
-                        </ul>
+                        <div class="products-specials-text-container">
+                            <div class="products-specials-text">
+                                <h2>SPECIALS</h2>
+                                <p>Check out our new products!</p>
+                            </div>
+                            <div class="products-specials-list-container">
+                            
+                                <a href=""><p>Ladies Custom Belts</p></a>
+                                <a href=""><p>Championship Belt Style Bracelet</p></a>
+                            
+                            </div>
+                        </div>
                     </div>
                     <div class="grid-1fr testimonials-master-container">
                         <p class="testimonials-p">Our Prices are very competitive for Custom Buckles, Medals, Coins, Pins and more...</p>
@@ -111,28 +118,31 @@
                     </div>
                 </div>
                 <form class="contact-us-container" action="#">
-                    <button class="btn" style="border: none;">CONTACT US</button>
+                    <button class="btn btn-yellow-border drop-shadow" style="font-weight: bold; font-size: large; border-radius: 0.5rem;">CONTACT US</button>
                 </form>
             </section>
-            <section>
-                <h2>Brands</h2>
+            <h1 class="section-header">Brands</h1>
+            <section class="brands-section-container">
+                
                 <div class="brands-container">
                     <img src="./images/Ace_Brands2.webp" alt="brand logos">
-                        <p>TRUSTED BY BIG BRANDS</p>
-                        <p>Not just big brands, small brands too!</p><br>
+                        <p class="brands-header-p">TRUSTED BY BIG BRANDS</p>
+                        <p class="brands-subheader-p">Not just big brands, small brands too!</p><br>
 
                         <p>From 25 pieces to 25,000 or more.</p>
                         <p>We make Custom Metal Products orders easy - Let us prove it to you!</p>
                 </div>
             </section>
-            <h2>Ready for your next project?</h2>
+            <h1 class="section-header">Ready for your next project?</h1>
             <section class="next-project-container">
                 
                 <div class="next-project-left-container">
                     <img src="./images/next-project.jpg" class="next-project-img" alt="laptop">
-                    <p>If you have artwork, sketches or any photo that you want to share with us now,
-                    please feel free to email us.</p>
-                    <button>CONTACT US NOW</button>
+                    <div class="next-project-left-text-container">
+                        <p><strong>If you have artwork, sketches or any photo that you want to share with us now,
+                        please feel free to email us.</strong></p>
+                        <button class="btn" style="height: 50%; margin-block: 1rem; border: none; font-weight: bold; padding: 0.7rem;">CONTACT US NOW</button>
+                    </div>
                 </div>
                 <div class="next-project-right-container">
                     <img src="./images/ACE-Custom-Logo copy.webp" class="next-project-ace-logo" alt="ace logo">
@@ -145,15 +155,15 @@
             <div class="top-footer">
                 <div class="footer-phone">
                     <img src="./images/footer-phone.webp" alt="footer phone">
-                    <p>1-866-882-9701</p>
+                    <p><strong>1-866-882-9701</strong></p>
                 </div>
                 <div class="footer-email">
                     <img src="./images/footer-email.webp" alt="footer email">
-                    <p>info@acecustom.com</p>
+                    <p><strong>info@acecustom.com</strong></p>
                 </div>
             </div>
             <div class="bottom-footer">
-                <p>COPYRIGHT © 2023 ACECUSTOM.COM. ALL RIGHTS RESERVED</p>
+                <p>Copyright © 2023 ACECUSTOM.COM. All Rights Reserved</p>
             </div>
         </footer>
     </body>
