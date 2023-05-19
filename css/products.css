@@ -1,0 +1,23 @@
+.nav-products {
+    color: red;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+
+/* MAIN SECTION */
+
+.all-products-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.all-products-main-container {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 2px 4px 11px -7px rgba(0,0,0,0.9); 
+    box-shadow: 2px 4px 11px -7px rgba(0,0,0,0.9);
+}
