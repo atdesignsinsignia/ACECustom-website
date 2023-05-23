@@ -32,13 +32,16 @@
                 </div>
             </div>
             <div class="header-main-bar">
-                <a href="./index.html"><img src="./images/ACE-Custom-Logo copy.webp" alt="ace custom logo"></a>
-                <nav>
+                <div class="burger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+                  <nav class="mobile-nav">
                     <a href="./products.html" class="nav-a">Products</a>
                     <a href="#" class="nav-a">Projects</a>
-                    <a href="#" class="nav-button btn drop-shadow" style="border-radius: 0.5rem;">QUOTE</a>
-                    
-                </nav>
+                    <a href="#" class="nav-button btn drop-shadow" style="border-radius: 0.5rem; font-weight: bold; font-size: larger;">QUOTE</a>
+                  </nav>
             </div>
         </header>
         <main>
@@ -74,7 +77,7 @@
                         </div>
                         <h2 class="product-header">Custom Coins</h2>
                         <div class="products-text">
-                            <p>Detailed challenge coins, fundraiser coins, unique shaped coins</p>
+                            <p>Detailed challenge coins, unique shaped fundraiser coins</p>
                         </div>
                     </div>
                   
@@ -84,14 +87,13 @@
                         </div>
                         <h2 class="product-header">Custom Pins</h2>
                         <div class="products-text">
-                            <p>Domestic or overseas manufacturing.</p>
-                            <p>Low minimums.</p>
+                            <p>Domestic or overseas manufacturing. Low minimums.</p>
                         </div>
                     </div>
                     <div class="grid-2fr products-specials-box">
                         <img src="./images/specials copy.webp" class="specials-img" alt="special products">
                         <div class="products-specials-text-container">
-                            <div class="products-specials-text">
+                            <div class="products-specials-text" style="text-align: center;">
                                 <h2>SPECIALS</h2>
                                 <p>Check out our new products!</p>
                             </div>
@@ -121,7 +123,7 @@
                     <button class="btn btn-yellow-border drop-shadow" style="font-weight: bold; font-size: large; border-radius: 0.5rem;">CONTACT US</button>
                 </form>
             </section>
-            <h1 class="section-header">Brands</h1>
+            <h1 class="section-header brands-index">Brands</h1>
             <section class="brands-section-container">
                 
                 <div class="brands-container">
@@ -133,7 +135,7 @@
                         <p>We make Custom Metal Products orders easy - Let us prove it to you!</p>
                 </div>
             </section>
-            <h1 class="section-header">Ready for your next project?</h1>
+            <h1 class="section-header ready-next-project">Ready for your next project?</h1>
             <section class="next-project-container">
                 
                 <div class="next-project-left-container">
@@ -166,5 +168,7 @@
                 <p>Copyright © 2023 ACECUSTOM.COM. All Rights Reserved</p>
             </div>
         </footer>
+        
+        <script src="./burger.js"></script>
     </body>
 </html>
