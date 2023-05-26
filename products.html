@@ -12,43 +12,73 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-            <header>
-            
-                <div class="header-top-red-bar">
-                    <div class="header-top-left-container">
+        <header>
+        
+            <div class="header-top-red-bar">
+                <div class="header-top-left-container">
 
-                        <div>
-                            <img src="./images/email_yellow.webp" style="margin-right: 0.25rem;" alt="email">
-                            <p>info@acecustom.com</p>
-                        </div>
-                    </div>
-                    <div class="header-top-right-container">
-                        <p>STAY IN TOUCH!</p>
-                        <div class="header-top-social-media">
-                            <a href="https://www.facebook.com/ACEcustomproducts"><img src="./images/fb_yellow.webp" alt="facebook"></a>
-                            <a href="https://www.instagram.com/ace.custom/"><img src="./images/insta_yellow.webp" alt="instagram"></a>
-                            <a href="https://www.linkedin.com/company/ace-custom"><img src="./images/linkedin_yellow.webp" alt="linkedin"></a>
-                            <a href="https://twitter.com/ace_custom"><img src="./images/twitter_yellow.webp" alt="twitter"></a>
-                        </div>
+                    <div>
+                        <img src="./images/email_yellow.webp" style="margin-right: 0.25rem;" alt="email">
+                        <p>info@acecustom.com</p>
                     </div>
                 </div>
-                <div class="header-main-bar">
-                    <a href="./index.html"><img src="./images/ACE-Custom-Logo copy.webp" alt="ace custom logo"></a>
-                    <nav>
-                        <a href="./products.html" class="nav-products">Products</a>
-                        <a href="#" class="nav-a">Projects</a>
-                        <a href="#" class="nav-button btn  drop-shadow" style="border-radius: 0.5rem;">QUOTE</a>
-                        
-                    </nav>
+                <div class="header-top-right-container">
+                    <p>STAY IN TOUCH!</p>
+                    <div class="header-top-social-media">
+                        <a href="https://www.facebook.com/ACEcustomproducts"><img src="./images/fb_yellow.webp" alt="facebook"></a>
+                        <a href="https://www.instagram.com/ace.custom/"><img src="./images/insta_yellow.webp" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/company/ace-custom"><img src="./images/linkedin_yellow.webp" alt="linkedin"></a>
+                        <a href="https://twitter.com/ace_custom"><img src="./images/twitter_yellow.webp" alt="twitter"></a>
+                    </div>
                 </div>
-            </header>
+            </div>
+            <div class="header-main-bar">
+                <a href="./index.html"><img class="desktop-logo" src="./images/ACE-Custom-Logo copy.webp" alt="ace logo"></a>
+                <a href="./index.html"><img class="mobile-logo" src="./images/ACE-Custom-Logo copy.webp" alt="ace logo"></a>
+                <form class="mobile-quote" action="#">
+                    <button class="btn btn-yellow-border drop-shadow" style="font-weight: bold; font-size: large; border-radius: 0.5rem;">GET A QUOTE</button>
+                </form>
+                
+                <nav class="mobile-nav">
+                    <a href="./products.html" class="nav-products">Products</a>
+                    <a href="#" class="nav-a">Projects</a>
+                    <a href="#" class="nav-button btn drop-shadow" style="border-radius: 0.5rem; font-weight: bold; font-size: larger;">QUOTE</a>
+                </nav>
+            </div>
+        </header>
             <main>
-                <h1>All Products</h1>
-                <section class="all-products-flex-container">
-                    <article class="all-products-main-container">
-                        <div class="products-img-overlay">
-                            <img src="./images/Gallery_Buckles.webp" class="products-img" alt="custom buckles">
+                
+                <h1 class="all-products-h1">All Products</h1>
+                <!--New Products-->
+                <div class="all-products-new-container">
+                    <h3>Featured Products</h3>
+                    <img src="./images/specials copy.webp" alt="new products">
+                    <div class="featured-products-info-container">
+                        <div class="featured-products-box">
+                            <h4>Ladies Custom Belt</h4>
+                            <ul>
+                                <li>Faux leather font - elastic belt</li>
+                                <li>Velcro fastener</li>
+                                <li>Size: S/M and L/XL - 2" wide</li>
+                            </ul>
                         </div>
+                        <div class="featured-products-box">
+                            <h4 style="text-align: center;">Championship Belt Style Bracelet</h4>
+                            <ul>
+                                <li>High quality faux-leather bracelet</li>
+                                <li>Velcro closure</li>
+                                <li>Unisex</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--All Products-->
+                <section class="all-products-flex-container">
+
+                    <article class="all-products-main-container">
+                        
+                        <img src="./images/Gallery_Buckles.webp" class="all-products-img" alt="custom buckles">
+                        
 
                         <h2 class="product-header">Custom Buckles</h2>
 
@@ -62,9 +92,9 @@
                     </article>
 
                     <article class="all-products-main-container">
-                        <div class="products-img-overlay">
-                            <img src="./images/Gallery_Medals.webp" class="products-img" alt="custom medals">
-                        </div>
+                        
+                            <img src="./images/Gallery_Medals.webp" class="all-products-img" alt="custom medals">
+                        
                         <h2 class="product-header">Custom Medals</h2>
                         <div class="all-products-text-container">
                             
@@ -76,9 +106,9 @@
                     </article>
 
                     <article class="all-products-main-container">
-                        <div class="products-img-overlay">
-                            <img src="./images/Gallery_Coins.webp" class="products-img" alt="custom coins">
-                        </div>
+                        
+                            <img src="./images/Gallery_Coins.webp" class="all-products-img" alt="custom coins">
+                        
                         <h2 class="product-header">Custom Coins</h2>
                         <div class="all-products-text-container">
                             
@@ -89,9 +119,9 @@
                     </article>
 
                     <article class="all-products-main-container">
-                        <div class="products-img-overlay">
-                            <img src="./images/Gallery_Pins.webp" class="products-img" alt="custom pins">
-                        </div>
+                        
+                            <img src="./images/Gallery_Pins.webp" class="all-products-img" alt="custom pins">
+                        
                         <h2 class="product-header">Custom Pins</h2>
                         <div class="all-products-text-container">
                             
@@ -103,9 +133,9 @@
                     </article>
 
                     <article class="all-products-main-container">
-                        <div class="products-img-overlay">
-                            <img src="./images/KeyTags_Main.jpg" class="products-img" alt="custom keytags">
-                        </div>
+                        
+                            <img src="./images/KeyTags_Main.jpg" class="all-products-img" alt="custom keytags">
+                        
                         <h2 class="product-header">Custom Key Tags</h2>
                         <div class="all-products-text-container">
                             
@@ -117,9 +147,9 @@
                     </article>
 
                     <article class="all-products-main-container">
-                        <div class="products-img-overlay">
-                            <img src="./images/Ornaments_Main.jpg" class="products-img" alt="custom ornaments">
-                        </div>
+                        
+                            <img src="./images/Ornaments_Main.jpg" class="all-products-img" alt="custom ornaments">
+                       
                         <h2 class="product-header">Custom Ornaments</h2>
                         <div class="all-products-text-container">
                             
@@ -131,9 +161,9 @@
                     </article>
 
                     <article class="all-products-main-container">
-                        <div class="products-img-overlay">
-                            <img src="./images/BagTags_Main.jpg" class="products-img" alt="custom bagtags">
-                        </div>
+                        
+                            <img src="./images/BagTags_Main.jpg" class="all-products-img" alt="custom bagtags">
+                        
                         <h2 class="product-header">Custom Bag Tags</h2>
                         <div class="all-products-text-container">
                             
@@ -145,9 +175,9 @@
                     </article>
 
                     <article class="all-products-main-container">
-                        <div class="products-img-overlay">
-                            <img src="./images/Plaques_Main.jpg" class="products-img" alt="custom plaques">
-                        </div>
+                       
+                            <img src="./images/Plaques_Main.jpg" class="all-products-img" alt="custom plaques">
+                        
                         <h2 class="product-header">Custom Plaques</h2>
                         <div class="all-products-text-container">
                             
@@ -159,9 +189,9 @@
                     </article>
 
                     <article class="all-products-main-container">
-                        <div class="products-img-overlay">
-                            <img src="./images/DogTags_Main.jpg" class="products-img" alt="custom dogtags">
-                        </div>
+                        
+                            <img src="./images/DogTags_Main.jpg" class="all-products-img" alt="custom dogtags">
+                        
                         <h2 class="product-header">Custom Dog Tags</h2>
                         <div class="all-products-text-container">
                             
@@ -173,9 +203,9 @@
                     </article>
 
                     <article class="all-products-main-container">
-                        <div class="products-img-overlay">
-                            <img src="./images/Gifts_Main.jpg" class="products-img" alt="custom gifts">
-                        </div>
+                        
+                            <img src="./images/Gifts_Main.jpg" class="all-products-img" alt="custom gifts">
+                       
                         <h2 class="product-header">Custom Gifts</h2>
                         <div class="all-products-text-container">
                             
@@ -187,9 +217,9 @@
                     </article>
 
                     <article class="all-products-main-container">
-                        <div class="products-img-overlay">
-                            <img src="./images/KeyToCity_Main.jpg" class="products-img" alt="keys to city">
-                        </div>
+                        
+                            <img src="./images/KeyToCity_Main.jpg" class="all-products-img" alt="keys to city">
+                        
                         <h2 class="product-header">Keys to City</h2>
                         <div class="all-products-text-container">
                             
@@ -201,9 +231,9 @@
                     </article>
 
                     <article class="all-products-main-container">
-                        <div class="products-img-overlay">
-                            <img src="./images/Jewelry_Main.jpg" class="products-img" alt="custom buckles">
-                        </div>
+                    
+                            <img src="./images/Jewelry_Main.jpg" class="all-products-img" alt="custom buckles">
+                       
                         <h2 class="product-header">Custom Jewelry</h2>
                         <div class="all-products-text-container">
                             
@@ -213,6 +243,22 @@
                             </div>
                         </div>
                     </article>
+                </section>
+                <section class="next-project-container">
+                
+                    <div class="next-project-left-container">
+                        <img src="./images/next-project.jpg" class="next-project-img" alt="laptop">
+                        <div class="next-project-left-text-container">
+                            <p><strong>If you have artwork, sketches or any photo that you want to share with us now,
+                            please feel free to email us.</strong></p>
+                            <button class="btn" style="height: 50%; margin-block: 1rem; border: none; font-weight: bold; padding: 0.7rem;">CONTACT US NOW</button>
+                        </div>
+                    </div>
+                    <div class="next-project-right-container">
+                        <img src="./images/ACE-Custom-Logo copy.webp" class="next-project-ace-logo" alt="ace logo">
+                        <p><strong>Over 50 years of Experience</strong></p>
+                        <p>North American Made Products Available</p>
+                    </div>
                 </section>
             </main>
             <footer>

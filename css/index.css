@@ -508,11 +508,23 @@ main {
         max-width: 15rem;
     }
 
+    .desktop-logo {
+        width: 7rem;
+    }
+
+
+
 }
 
 
 
 @media screen and (max-width: 681px) {
+
+    .desktop-logo {
+        display: none;
+    }
+
+
 
     main {
 
