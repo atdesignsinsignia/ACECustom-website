@@ -1,0 +1,10 @@
+.finishes-text-area {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.finishes-text-area p{
+    margin-block: 1rem;
+}
+
