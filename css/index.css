@@ -49,6 +49,8 @@ body::before {
     opacity: 0.3;  /* Set the opacity of the background image */
     z-index: -1;  /* Puts the pseudo-element behind the body content */
     background-color: rgba(77, 77, 77, 0.568); /* Adjust the opacity and color values as desired */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .drop-shadow {
