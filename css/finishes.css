@@ -36,13 +36,14 @@
 
 
 .finishes-box img {
-
+    border-radius: 0.5rem;
     width: 17rem;
 }
 
 
 
 .finishes-text-area {
+    margin: 1rem;
     background-color: white;
     padding: 1rem;
     border-radius: 0.5rem;
