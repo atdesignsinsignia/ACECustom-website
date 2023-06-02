@@ -1,3 +1,10 @@
+:root {
+    --red: rgb(237, 28, 28);
+    --yellow: rgb(255, 187, 0);
+    --black: #333;
+}
+
+
 .finishes-main-container {
     background-color: white;
     padding: 1rem;
@@ -38,6 +45,14 @@
     text-align: center;
 }
 
+.finishes-header {
+    background-color: var(--red);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem 0;
+    color: white;
+}
+
 .finishes-box p {
     font-style: italic;
     width: 15rem;
@@ -49,8 +64,12 @@
 .finishes-box img {
     border-radius: 0.5rem;
     width: 17rem;
+    transition: transform 0.3s ease;
 }
 
+.finishes-box img:hover {
+    transform: scale(1.02);
+}
 
 
 .finishes-text-area {
@@ -86,6 +105,18 @@
 }
 
 /*Finish Style Page*/
+
+.finish-style-header-background {
+    background-color: var(--red);
+    padding: 1rem;
+    border-radius: 1rem 0;
+    text-align: center;
+    color: white;
+}
+
+.finish-style-header-background h1 {
+    color: white;
+}
 
 .square-bullets {
     list-style-type: square;
@@ -143,4 +174,21 @@
 .finish-style-sample-img p {
     font-weight: 500;
     font-style: italic;
+}
+
+.back-button-container {
+    display: flex;
+    align-items: center;
+    
+    text-align: left;
+    margin-left: 2rem
+}
+
+.back-button {
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+.back-button-container p {
+    font-weight: bold;
 }

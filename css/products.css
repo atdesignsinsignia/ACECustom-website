@@ -89,4 +89,9 @@ li {
 .all-products-img {
     width: 15rem;
     border-radius: 0.5rem;
+    transition: transform 0.3s ease;
 } 
+
+.all-products-img:hover {
+    transform: scale(1.02);
+}

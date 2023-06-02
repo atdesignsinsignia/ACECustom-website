@@ -7,7 +7,7 @@
 }
 
 :root {
-    --red: rgb(239, 2, 2);
+    --red: rgb(237, 28, 28);
     --yellow: rgb(255, 187, 0);
     --black: #333;
 }
@@ -231,6 +231,11 @@ main {
 
 .section-header {
     margin-block: 1rem;
+    background-color: var(--red);
+    padding: 1rem;
+    border-radius: 1rem 0;
+    text-align: center;
+    color: white;
 }
 
 /*PRODUCTS */
@@ -412,6 +417,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: white;
+    padding: 0.1rem;
+    padding-block: 1rem;
+    border-radius: 0.5rem;
  
 }
 
