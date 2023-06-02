@@ -4,6 +4,9 @@
     --black: #333;
 }
 
+.indent {
+    margin-left: 1rem;
+}
 
 .finishes-main-container {
     background-color: white;
