@@ -161,11 +161,7 @@
     flex-wrap: wrap;
 }
 
-.finish-style-sample-img-container img {
-    margin-bottom: 2rem ;
-    width: 17rem;
-    height: 13rem;
-}
+
 
 .finish-style-sample-img {
     display: flex;
@@ -195,3 +191,33 @@
 .back-button-container p {
     font-weight: bold;
 }
+
+
+
+
+.unique-medal-sample-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 2px 4px 11px -7px rgba(0,0,0,0.9); 
+    box-shadow: 2px 4px 11px -7px rgba(0,0,0,0.9);
+    
+}
+
+.unique-medal-sample-img {
+    margin: 1rem;
+    text-align: center;
+}
+
+.unique-medal-sample-img img{
+    width: 10rem;
+    
+}
+
+.unique-medal-header {
+    text-align: center;
+    margin-block: 1rem;
+}
+
