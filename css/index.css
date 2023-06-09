@@ -230,6 +230,7 @@ main {
 }
 
 .section-header {
+    
     margin-block: 1rem;
     background-color: var(--red);
     padding: 1rem;
@@ -391,7 +392,8 @@ main {
 }
 
 .brands-container img {
-    width: 60%;
+    width: 85%;
+    margin-bottom: 1rem;
 
 }
 
@@ -523,6 +525,7 @@ main {
 
     .section-header {
         text-align: center;
+        margin-inline: 1rem;
      }
 
      .next-project-right-container {

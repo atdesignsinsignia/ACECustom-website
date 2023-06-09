@@ -69,7 +69,7 @@ li {
     flex-wrap: wrap;
     gap: 2rem;
     margin-block: 1rem;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .all-products-main-container {
@@ -94,4 +94,12 @@ li {
 
 .all-products-img:hover {
     transform: scale(1.02);
+}
+
+
+@media screen and (max-width: 681px) {
+    .featured-products-box ul {
+        display: none;
+    }
+
 }
