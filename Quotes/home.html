@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/products.css">
+        <link rel="stylesheet" href="../css/quote.css">
+        <link rel="stylesheet" href="../css/finishes.css">
+        <title>Ace Custom</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        
+            <div class="header-top-red-bar">
+                <div class="header-top-left-container">
+
+                    <div>
+                        <img src="../images/email_yellow.webp" style="margin-right: 0.25rem;" alt="email">
+                        <p>info@acecustom.com</p>
+                    </div>
+                </div>
+                <div class="header-top-right-container">
+                    <p>STAY IN TOUCH!</p>
+                    <div class="header-top-social-media">
+                        <a href="https://www.facebook.com/ACEcustomproducts"><img src="../images/fb_yellow.webp" alt="facebook"></a>
+                        <a href="https://www.instagram.com/ace.custom/"><img src="../images/insta_yellow.webp" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/company/ace-custom"><img src="../images/linkedin_yellow.webp" alt="linkedin"></a>
+                        <a href="https://twitter.com/ace_custom"><img src="../images/twitter_yellow.webp" alt="twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main-bar">
+                <a href="../index.html"><img class="desktop-logo" src="../images/ACE-Custom-Logo copy.webp" alt="ace logo"></a>
+                <a href="../index.html"><img class="mobile-logo" src="../images/ACE-Custom-Logo copy.webp" alt="ace logo"></a>
+                <form class="mobile-quote" action="#">
+                    <button class="btn btn-yellow-border drop-shadow" style="font-weight: bold; font-size: large; border-radius: 0.5rem;">GET A QUOTE</button>
+                </form>
+                
+                <nav class="mobile-nav">
+                    <a href="../products.html" class="nav-a">Products</a>
+                    <a href="../Projects/home.html" class="nav-a">Projects</a>
+                    <a href="../Quotes/home.html" class="nav-button btn drop-shadow" style="border-radius: 0.5rem; font-weight: bold; font-size: larger;">QUOTE</a>
+                </nav>
+            </div>
+        </header>
+            <main>
+                
+                <h1 class="finishes-header">Tell us more about your project</h1>
+                <section class="finishes-text-area" style="text-align: center;">
+                    <p>Let's embark on your exciting project together! To initiate the process, kindly take a moment to provide us with some essential details by completing the form below. Our dedicated team members are eagerly waiting to assist you, and one of our representatives will promptly reach out to you with all the information you need.</p>
+                    <p>If you prefer a more immediate response, feel free to reach us through alternative channels. You can email us directly at <strong>info@acecustom.com</strong>, ensuring a swift and efficient line of communication. Alternatively, you can give us a call at <strong>1-866-882-9701</strong>, where our attentive staff will be delighted to answer any queries you may have, ensuring the fastest possible response time.</p>
+                    <p>We genuinely appreciate your interest in our services and look forward to working with you to bring your project to fruition.</p>
+                    
+                </section>
+
+                <!--CONTACT FORM START-->
+                <div class="container drop-shadow">
+                    <form action="/submit_form" method="POST">
+                      <label for="fname">Name:</label>
+                      <input type="text" id="name" name="name" placeholder="Your name..">
+                  
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" placeholder="Your email..">
+
+                      <label for="phone">Phone:</label>
+                      <input type="tel" id="phone" name="phone">
+                      
+                      <label for="product_type" class="required">Which product(s) are you interested in?</label>
+                      <select id="product_type" name="product_type" required="">
+                        <option value="">Please select</option>
+                        <option value="Medals">Medals</option>
+                        <option value="Pins">Pins</option>
+                        <option value="Buckles">Buckles</option>
+                        <option value="Coins">Coins</option>
+                        <option value="Bagtags">Bagtags</option>
+                        <option value="Key Tags">Key Tags</option>
+                        <option value="Dog Tags">Dog Tags</option>
+                        <option value="Plaques">Plaques</option>
+                        <option value="Keys to the City">Keys to the City</option>
+                        <option value="Ornaments">Ornaments</option>
+                        <option value="Jewelry">Jewelry</option>
+                        <option value="Pendants">Ladies Custom Belt</option>
+                        <option value="Bottle Openers">Cham Belt Bracelet</option>
+                        <option value="Recognition Awards">Recognition Awards</option>
+                        <option value="Souvenir Products">Souvenir Products</option>
+                        <option value="Other">Other..</option>
+                    </select>
+
+                    <label for="quantity">How many pieces? (approx.):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" step="1">
+                  
+                      <label for="message">Write a brief description of how you would like it to look:</label>
+                      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                      
+                      <label>Upload your reference image(s):</label>
+                      <input type="file" id="upload_1" name="upload_1">
+                      <input type="file" id="upload_2" name="upload_2">
+
+                      <div class="submit-container">
+                        <input class="drop-shadow" type="submit" value="Submit">
+                      </div>
+                    </form>
+                  </div>
+                <!--CONTACT FORM END-->
+              
+            </main>
+            <footer>
+                <div class="top-footer">
+                    <div class="footer-phone">
+                        <img src="../images/footer-phone.webp" alt="footer phone">
+                        <p><strong>1-866-882-9701</strong></p>
+                    </div>
+                    <div class="footer-email">
+                        <img src="../images/footer-email.webp" alt="footer email">
+                        <p><strong>info@acecustom.com</strong></p>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <p>Copyright © 2023 ACECUSTOM.COM. All Rights Reserved</p>
+                </div>
+            </footer>
+    </body>
+</html>
