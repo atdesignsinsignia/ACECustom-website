@@ -43,64 +43,66 @@
             </div>
         </header>
             <main>
-                
-                <h1 class="finishes-header">Tell us more about your project</h1>
-                <section class="finishes-text-area" style="text-align: center;">
-                    <p>Let's embark on your exciting project together! To initiate the process, kindly take a moment to provide us with some essential details by completing the form below. Our dedicated team members are eagerly waiting to assist you, and one of our representatives will promptly reach out to you with all the information you need.</p>
-                    <p>If you prefer a more immediate response, feel free to reach us through alternative channels. You can email us directly at <strong>info@acecustom.com</strong>, ensuring a swift and efficient line of communication. Alternatively, you can give us a call at <strong>1-866-882-9701</strong>, where our attentive staff will be delighted to answer any queries you may have, ensuring the fastest possible response time.</p>
-                    <p>We genuinely appreciate your interest in our services and look forward to working with you to bring your project to fruition.</p>
-                    
-                </section>
-
                 <!--CONTACT FORM START-->
-                <div class="container drop-shadow">
-                    <form action="/submit_form" method="POST">
-                      <label for="fname">Name:</label>
-                      <input type="text" id="name" name="name" placeholder="Your name..">
-                  
-                      <label for="email">Email:</label>
-                      <input type="email" id="email" name="email" placeholder="Your email..">
+                <form name="contact" method="POST" data-netlify="true">
+                    <h1 class="finishes-header">Tell us more about your project</h1>
+                    <section class="finishes-text-area" style="text-align: center;">
+                        <p>Let's embark on your exciting project together! To initiate the process, kindly take a moment to provide us with some essential details by completing the form below. Our dedicated team members are eagerly waiting to assist you, and one of our representatives will promptly reach out to you with all the information you need.</p>
+                        <p>If you prefer a more immediate response, feel free to reach us through alternative channels. You can email us directly at <strong>info@acecustom.com</strong>, ensuring a swift and efficient line of communication. Alternatively, you can give us a call at <strong>1-866-882-9701</strong>, where our attentive staff will be delighted to answer any queries you may have, ensuring the fastest possible response time.</p>
+                        <p>We genuinely appreciate your interest in our services and look forward to working with you to bring your project to fruition.</p>
+                        
+                    </section>
 
-                      <label for="phone">Phone:</label>
-                      <input type="tel" id="phone" name="phone">
-                      
-                      <label for="product_type" class="required">Which product(s) are you interested in?</label>
-                      <select id="product_type" name="product_type" required="">
-                        <option value="">Please select</option>
-                        <option value="Medals">Medals</option>
-                        <option value="Pins">Pins</option>
-                        <option value="Buckles">Buckles</option>
-                        <option value="Coins">Coins</option>
-                        <option value="Bagtags">Bagtags</option>
-                        <option value="Key Tags">Key Tags</option>
-                        <option value="Dog Tags">Dog Tags</option>
-                        <option value="Plaques">Plaques</option>
-                        <option value="Keys to the City">Keys to the City</option>
-                        <option value="Ornaments">Ornaments</option>
-                        <option value="Jewelry">Jewelry</option>
-                        <option value="Pendants">Ladies Custom Belt</option>
-                        <option value="Bottle Openers">Cham Belt Bracelet</option>
-                        <option value="Recognition Awards">Recognition Awards</option>
-                        <option value="Souvenir Products">Souvenir Products</option>
-                        <option value="Other">Other..</option>
-                    </select>
+                    
+                    <div class="container drop-shadow">
+                        <form action="/submit_form" method="POST">
+                        <label for="fname">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email..">
 
-                    <label for="quantity">How many pieces? (approx.):</label>
-                    <input type="number" id="quantity" name="quantity" min="1" step="1">
-                  
-                      <label for="message">Write a brief description of how you would like it to look:</label>
-                      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-                      
-                      <label>Upload your reference image(s):</label>
-                      <input type="file" id="upload_1" name="upload_1">
-                      <input type="file" id="upload_2" name="upload_2">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                        
+                        <label for="product_type" class="required">Which product(s) are you interested in?</label>
+                        <select id="product_type" name="product_type" required="">
+                            <option value="">Please select</option>
+                            <option value="Medals">Medals</option>
+                            <option value="Pins">Pins</option>
+                            <option value="Buckles">Buckles</option>
+                            <option value="Coins">Coins</option>
+                            <option value="Bagtags">Bagtags</option>
+                            <option value="Key Tags">Key Tags</option>
+                            <option value="Dog Tags">Dog Tags</option>
+                            <option value="Plaques">Plaques</option>
+                            <option value="Keys to the City">Keys to the City</option>
+                            <option value="Ornaments">Ornaments</option>
+                            <option value="Jewelry">Jewelry</option>
+                            <option value="Pendants">Ladies Custom Belt</option>
+                            <option value="Bottle Openers">Cham Belt Bracelet</option>
+                            <option value="Recognition Awards">Recognition Awards</option>
+                            <option value="Souvenir Products">Souvenir Products</option>
+                            <option value="Other">Other..</option>
+                        </select>
 
-                      <div class="submit-container">
-                        <input class="drop-shadow" type="submit" value="Submit">
-                      </div>
-                    </form>
-                  </div>
-                <!--CONTACT FORM END-->
+                        <label for="quantity">How many pieces? (approx.):</label>
+                        <input type="number" id="quantity" name="quantity" min="1" step="1">
+                    
+                        <label for="message">Write a brief description of how you would like it to look:</label>
+                        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                        
+                        <label>Upload your reference image(s):</label>
+                        <input type="file" id="upload_1" name="upload_1">
+                        <input type="file" id="upload_2" name="upload_2">
+
+                        <div class="submit-container">
+                            <input class="drop-shadow" type="submit" value="Submit">
+                        </div>
+                        </form>
+                    </div>
+                    <!--CONTACT FORM END-->
+                </form>
               
             </main>
             <footer>
