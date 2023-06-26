@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/products.css">
         <link rel="stylesheet" href="../css/quote.css">
         <link rel="stylesheet" href="../css/finishes.css">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
         <title>Ace Custom</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +46,7 @@
             <main>
                 <!--CONTACT FORM START-->
                 <form name="contact" method="POST" data-netlify="true">
-                    <h1 class="finishes-header">Tell us more about your project</h1>
+                    <h1 class="finishes-header">Tell us about your project.</h1>
                     <section class="finishes-text-area" style="text-align: center;">
                         <p>Let's embark on your exciting project together! To initiate the process, kindly take a moment to provide us with some essential details by completing the form below. Our dedicated team members are eagerly waiting to assist you, and one of our representatives will promptly reach out to you with all the information you need.</p>
                         <p>If you prefer a more immediate response, feel free to reach us through alternative channels. You can email us directly at <strong>info@acecustom.com</strong>, ensuring a swift and efficient line of communication. Alternatively, you can give us a call at <strong>1-866-882-9701</strong>, where our attentive staff will be delighted to answer any queries you may have, ensuring the fastest possible response time.</p>
@@ -59,14 +60,14 @@
                         <label for="fname">Name:</label>
                         <input type="text" id="name" name="name" placeholder="Your name..">
                     
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Your email..">
+                        <label for="email">Email: <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Your email.." required>
 
-                        <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone">
+                        <label for="phone">Phone: <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required>
                         
-                        <label for="product_type" class="required">Which product(s) are you interested in?</label>
-                        <select id="product_type" name="product_type" required="">
+                        <label for="product_type">Which product(s) are you interested in? <span class="required">*</span></label>
+                        <select id="product_type" name="product_type" required="" required>
                             <option value="">Please select</option>
                             <option value="Medals">Medals</option>
                             <option value="Pins">Pins</option>

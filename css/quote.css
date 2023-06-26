@@ -38,5 +38,9 @@
     font-weight: bold;
   }
   input[type=submit]:hover {
-    background-color: ;
+    background-color: rgb(255, 58, 58);
+  }
+
+  .required {
+    color: red;
   }
