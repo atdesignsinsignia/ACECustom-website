@@ -1,0 +1,16 @@
+.sample-img-container-2d3d {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 3rem;
+
+}
+
+.sample-img-container-2d3d h4 {
+    margin-bottom: 1.5rem;
+}
+
+.pewter-blurb p {
+    margin-block: 1rem;
+}
