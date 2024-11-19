@@ -161,6 +161,12 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+.finish-style-sample-img-container img {
+    max-width: 100%; /* Scale image to fit its container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .finish-sample-h3 {
