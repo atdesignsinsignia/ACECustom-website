@@ -248,7 +248,7 @@ main {
 /*TRUST BADGES (homepage)*/
 
 .home-main {
-    margin-top: 2rem; /* badges take main's 8rem top gap; a class beats every main{} rule */
+    margin-block: 2rem; /* badges take main's 8rem top and bottom gaps; a class beats every main{} rule */
 }
 
 .trust-badges {
@@ -264,6 +264,13 @@ main {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.payment-badge {
+    display: block;
+    width: 151px;
+    height: auto;
+    margin: 1.5rem auto 0; /* + the button's 0.5rem margin = 32px, same rhythm as the top row */
 }
 
 /*PRODUCTS */
@@ -663,6 +670,10 @@ main {
     .trust-badges {
         grid-template-columns: repeat(2, minmax(0, 120px));
         justify-content: center;
+    }
+
+    .payment-badge {
+        width: 120px;
     }
 
     .grid-container {
