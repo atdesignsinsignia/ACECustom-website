@@ -245,6 +245,27 @@ main {
     color: white;
 }
 
+/*TRUST BADGES (homepage)*/
+
+.home-main {
+    margin-top: 2rem; /* badges take main's 8rem top gap; a class beats every main{} rule */
+}
+
+.trust-badges {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 151px)); /* half of the 302px source = sharp on 2x screens */
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.trust-badges img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /*PRODUCTS */
 
 .products-box {
@@ -576,6 +597,10 @@ main {
         margin-inline: 1rem;
      }
 
+    .trust-badges {
+        margin-inline: 1rem;
+    }
+
      .next-project-right-container {
 
     
@@ -633,6 +658,11 @@ main {
 
         margin-block: 4rem;
         
+    }
+
+    .trust-badges {
+        grid-template-columns: repeat(2, minmax(0, 120px));
+        justify-content: center;
     }
 
     .grid-container {
