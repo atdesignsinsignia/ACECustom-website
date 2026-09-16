@@ -26,7 +26,7 @@ Work through the gates in order. Don't start a gate until the previous one is do
 
 ## 4. Check
 - [ ] Automated checks from the plan (numbers, not impressions).
-- [ ] `visual-qa` at 1366/1070/954/768/682/681/535/375/320 plus one regression page.
+- [ ] `visual-qa` at 1366/1070/954/768/682/680/535/375/320 plus one regression page.
 - [ ] `git diff --stat` shows only planned files. Then commit (no push).
 
 ## 5. Act / Review

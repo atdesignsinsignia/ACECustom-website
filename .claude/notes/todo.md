@@ -8,7 +8,7 @@
 - [x] T1: `.claude/` project setup -> commit 1 (db78454) + overflow-check fix (015e07f)
 - [x] T2: Logo2.png + badge row (index.html, css/index.css) -> commit 2
 - [x] Check (run by the main session): 9 widths + 680 boundary, decoded colours, alt text, regression (products.html, Products/Buckles/home.html vs live) — all PASS
-- [ ] Review: lessons + report
+- [x] Review: lessons 9–13, CLAUDE.md corrections (commit 4), report to user
 
 ## Backlog — found out of scope (not changed)
 - [ ] "Over 50 years of Experience" (index.html, next-project section, >1200px) contradicts the "30 years since 1996" badge — owner to decide.

@@ -11,7 +11,8 @@ You are a QA engineer. You never modify files; you report.
 - Serve the site with the `site` preview configuration in .claude/launch.json (http://localhost:8080). Pages opened via `file://` render unstyled — don't use them.
 - If screenshots time out (app window minimized), fall back to DOM checks with JavaScript or page text, and say so.
 
-## Check at 1366, 1070, 954, 768, 682, 681, 535, 375 and 320 px wide
+## Check at 1366, 1070, 954, 768, 682, 680, 535, 375 and 320 px wide
+- Confirm which side of a breakpoint you are on with `matchMedia('(max-width: 681px)').matches` — emulated widths can be fractional.
 - The changed area matches the approved plan (order, size, spacing, alignment).
 - No horizontal scroll: `document.documentElement.scrollWidth <= document.documentElement.clientWidth` (not `innerWidth`, which includes the scrollbar).
 - All images load: every `img.complete && img.naturalWidth > 0`.
