@@ -35,7 +35,7 @@
 
 ## Preview & verify
 - Start the `site` preview (`.claude/launch.json`: `python -m http.server 8080`) -> http://localhost:8080/. Pages opened via `file://` in the in-app browser render unstyled.
-- Quick DOM checks: `document.documentElement.scrollWidth === innerWidth` (no sideways scroll); every `img.naturalWidth > 0`.
+- Quick DOM checks: `document.documentElement.scrollWidth <= document.documentElement.clientWidth` (no sideways scroll; don't compare with `innerWidth`, which includes the scrollbar on Windows); every `img.naturalWidth > 0`.
 - If screenshots time out, the app window is probably minimized: fall back to DOM checks and say so.
 
 ## Self-improvement loop
